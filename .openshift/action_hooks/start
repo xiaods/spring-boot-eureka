@@ -9,4 +9,3 @@ nohup java -server \
      -Dserver.port=${OPENSHIFT_DIY_PORT} \
      -Dlogging.path=${OPENSHIFT_LOG_DIR} \
      -jar ${jar} &
-
