@@ -1,8 +1,16 @@
 # Configure this Discovery Server
 eureka:
+  instance:
+    hostname: ${OPENSHIFT_APP_DNS}
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
+
+management:
+  context-path: /manage
+  
+server:
+  port: ${OPENSHIFT_DIY_PORT}   # HTTP (Tomcat) port
 
 # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
 spring:
