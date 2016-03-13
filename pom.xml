@@ -35,12 +35,6 @@
 		</dependency>
 	</dependencies>
 
-	<profiles>
-		<profile>
-			<id>openshift</id>
-		</profile>
-	</profiles>
-
 	<build>
 		<plugins>
 			<plugin>
