@@ -1,4 +1,5 @@
-# Configure this Discovery Server
+server:
+  port: 8080
 eureka:
 # instance:
 #    hostname: ${OPENSHIFT_APP_DNS}
@@ -8,9 +9,6 @@ eureka:
 
 management:
   context-path: /manage
-  
-server:
-  port: ${OPENSHIFT_DIY_PORT}   # HTTP (Tomcat) port
 
 # Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
 spring:
