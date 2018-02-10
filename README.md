@@ -1,1 +1,1 @@
-"# spring-boot-eureka-openshift" 
+springboot eureka on dmos
