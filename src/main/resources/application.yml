@@ -1,8 +1,6 @@
 server:
   port: 8761
 eureka:
-  instance:
-    hostname: springboot-eureka.demo-service.svc
   server:
     renewal-percent-threshold: 0.49
   client:
@@ -11,8 +9,3 @@ eureka:
 
 management:
   context-path: /manage
-
-# Discovery Server Dashboard uses FreeMarker.  Don't want Thymeleaf templates
-spring:
-  thymeleaf:
-    enabled: false     # Disable Thymeleaf 
